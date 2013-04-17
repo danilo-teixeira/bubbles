@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+
+		<meta charset="utf-8">
+			
+		<title>Bubbles</title>
+		
+		<style type="text/css">
+
+			body{
+				background:#000;
+				overflow:hidden;
+				margin:0;
+				padding:0;
+			}
+			#github{
+				position:absolute;
+				display:block;
+				width:200px;
+				height:30px;
+				bottom:10px;
+				right:10px;
+				color:#000;
+				font-family:"Helvetica";
+				text-transform:uppercase;
+				text-decoration:none;
+				text-align:center;
+				line-height:30px;
+				background:#fff;
+				box-shadow:0 0 7px #ccc;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<canvas id="layer"></canvas>
+
+		<div id="audios">
+
+			<audio id="explode">
+
+				<source src="audios/explode.mp3" type="audio/mp3"/>
+				<source src="audios/explode.wav" type="audio/wav"/>
+				<source src="audios/explode.ogg" type="audio/ogg"/>
+
+			</audio>
+
+			<audio id="error">
+
+				<source src="audios/error.mp3" type="audio/mp3"/>
+				<source src="audios/error.wav" type="audio/wav"/>
+				<source src="audios/error.ogg" type="audio/ogg"/>
+
+			</audio>
+
+		</div>
+		<a id="github" href="https://github.com/danilo-teixeira/bubbles" target="_blank">Fork me on GitHub</a>
+
+	</body>
+
+	<script type="text/javascript" src="js/bubbles.js"></script>
+	<script type="text/javascript">
+		bubbles.init();
+	</script>
+</html>
